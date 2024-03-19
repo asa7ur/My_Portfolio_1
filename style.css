@@ -288,7 +288,13 @@ header .image img{
     padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 3px;
-    transform: border 0.3s ease;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-me .form-group button:hover{
+    box-shadow: none;
 }
 
 .contact-me .result-container{
@@ -300,7 +306,7 @@ header .image img{
 
 .contact-me .result-container p{
     opacity: 0;
-    transform: all 0.3s ease;
+    transition: all 0.3s ease;
     color: var(--font-color-main);
 }
 
